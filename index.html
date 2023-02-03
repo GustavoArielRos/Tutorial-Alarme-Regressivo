@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Projeto Alarme - JavaScript</title>
+    <style>
+        .container{
+            text-align: center;
+        }
+
+        button{
+            background: #069;
+            color:white;
+            font-size: 32px;
+            padding:8px 20px;
+            cursor: pointer;
+            border:0;
+        }
+
+        select{
+            width: 70px;
+            height: 60px;
+            font-size: 2em;
+            color: #0043ffcc;
+            background-color: #0a0909;
+            display: inline-block;
+        }
+
+    h2{
+        display: inline-block;
+        margin: 65px 0px 0px 40px;
+        font-family: fantasy;
+        font-weight: 500;
+    }
+    </style>
+</head>
+
+<body>
+    <audio id="sound" src="alarm.mp3" style="display: none;"></audio>
+
+    <div class="container">
+        <h2>Minutos:</h2>
+        <select id="minutos" name="minutos"></select>
+
+        <h2>Segundos:</h2>
+        <select id="segundos" name="segundos"></select>
+        <br/>
+        <br/>
+        <button id="comecar">Começar!</button>
+        <button id="parar">Stop</button>
+
+        <div id="display">
+            <h3></h3>
+        </div>
+    </div>
+
+    <script src="alarme.js"></script>
+
+</body>
+
+</html>
